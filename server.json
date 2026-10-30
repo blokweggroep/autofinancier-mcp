@@ -1,0 +1,54 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.blokweggroep/autofinancier-mcp",
+  "title": "DeAutofinancier Vehicle Search",
+  "description": "Search the used vehicle inventory of De Autofinancier: approximately 97,000 second-hand vehicles from affiliated car dealers across the Netherlands, including asking prices and monthly payment estimates for consumer finance and financial lease. Tools: search_vehicles (19 optional filters, multi-value, pagination, sorting) and list_filter_values (all valid filter codes from the official taxonomy). No authentication required.",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.deautofinancier.nl/mcp"
+    }
+  ],
+  "tools": [
+    {
+      "name": "search_vehicles",
+      "description": "Search used vehicles in the De Autofinancier inventory. All filters are optional and freely combinable. Filter values are lowercase English codes; unknown values are silently ignored by the API (you will then get EVERYTHING back). Use list_filter_values first if you are not sure which codes to use."
+    },
+    {
+      "name": "list_filter_values",
+      "description": "Returns all valid filter values (makes, models, colors, fuel types, etc.) from the official taxonomy. Use this before searching if you are not sure which code a make or model has — the API silently ignores invalid values."
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/blokweggroep/autofinancier-mcp"
+  },
+  "websiteUrl": "https://www.deautofinancier.nl",
+  "documentationUrl": "https://www.deautofinancier.nl/llms.txt",
+  "links": [
+    {
+      "type": "documentation",
+      "url": "https://www.deautofinancier.nl/llms.txt",
+      "label": "Documentation for AI agents (llms.txt)"
+    },
+    {
+      "type": "openapi",
+      "url": "https://www.deautofinancier.nl/api/openapi.json",
+      "label": "OpenAPI 3.1 specification of the underlying search API"
+    },
+    {
+      "type": "other",
+      "url": "https://www.deautofinancier.nl/.well-known/vehicle-taxonomy",
+      "label": "Vehicle taxonomy with all valid filter values"
+    }
+  ],
+  "tags": [
+    "automotive",
+    "vehicles",
+    "car-dealers",
+    "netherlands",
+    "financial-lease",
+    "consumer-finance",
+    "search"
+  ]
+}
