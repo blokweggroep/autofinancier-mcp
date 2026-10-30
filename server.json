@@ -44,13 +44,18 @@
       "label": "Vehicle taxonomy with all valid filter values"
     }
   ],
-  "tags": [
-    "automotive",
-    "vehicles",
-    "car-dealers",
-    "netherlands",
-    "financial-lease",
-    "consumer-finance",
-    "search"
-  ]
+"tags": [
+  "mcp",
+  "mcp-server",
+  "automotive",
+  "vehicle-search",
+  "car-search",
+  "used-cars",
+  "car-dealers",
+  "netherlands",
+  "vehicle-finance",
+  "car-finance",
+  "financial-lease",
+  "consumer-finance"
+]
 }
