@@ -21,7 +21,9 @@
     }
   ],
   "repository": {
-    "url": "https://github.com/blokweggroep/autofinancier-mcp"
+    "url": "https://github.com/blokweggroep/autofinancier-mcp",
+    "source": "github",
+    "id": "blokweggroep/autofinancier-mcp"
   },
   "websiteUrl": "https://www.deautofinancier.nl",
   "documentationUrl": "https://www.deautofinancier.nl/llms.txt",
